@@ -2,6 +2,7 @@ import { Faucet } from "~/components/Faucet";
 import { LnChannel } from "~/components/LnChannel";
 import { LnFaucet } from "~/components/LnFaucet";
 import { NWC } from "~/components/NWC";
+import { LnWallet } from "~/components/LnWallet";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </h1>
       <Faucet />
       <LnFaucet />
+      <LnWallet />
       <LnChannel />
       <NWC />
       <div class="border border-white/50 rounded-xl p-4 w-full gap-2 flex flex-col">
