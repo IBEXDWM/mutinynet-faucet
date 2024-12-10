@@ -1,14 +1,13 @@
 import { Faucet } from "~/components/Faucet";
 import { LnChannel } from "~/components/LnChannel";
 import { LnFaucet } from "~/components/LnFaucet";
-import { NWC } from "~/components/NWC";
 import { LnWallet } from "~/components/LnWallet";
 
 export default function Home() {
     return (
         <main class="flex flex-col gap-4 items-center w-full max-w-[40rem] mx-auto">
             <h1 class="font-mono text-4xl drop-shadow-text-glow p-8 font-bold">
-                mutinynet
+                ibexsignet
             </h1>
             <Faucet />
             <LnFaucet />
