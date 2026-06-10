@@ -8,7 +8,9 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 
 # Install dependencies
-RUN npm install -g pnpm && pnpm install
+# Pin pnpm 8: it supports Node 19 (latest pnpm now requires Node >=22.13) and
+# matches the committed pnpm-lock.yaml (lockfileVersion 6.0).
+RUN npm install -g pnpm@8.15.9 && pnpm install
 
 # Add the ARG directives for build-time environment variables
 ARG VITE_FAUCET_API
